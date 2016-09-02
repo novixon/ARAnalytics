@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         =  'ARAnalytics'
-  s.version      =  '3.10.2'
+  s.version      =  '3.10.3'
   s.license      =  {:type => 'MIT', :file => 'LICENSE' }
   s.homepage     =  'https://github.com/orta/ARAnalytics'
   s.authors      =  { 'orta' => 'orta.therox@gmail.com', 'Daniel Haight' => "confidence.designed@gmail.com" }
-  s.source       =  { :git => 'https://github.com/orta/ARAnalytics.git', :tag => s.version.to_s }
+  s.source       =  { :git => 'https://github.com/novixon/ARAnalytics.git', :tag => s.version.to_s }
   s.ios.deployment_target = "7.0"
   s.osx.deployment_target = "10.7"
   s.social_media_url = "https://twitter.com/orta"
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
 
   mixpanel         = { :spec_name => "Mixpanel",            :dependency => "Mixpanel" }
   localytics       = { :spec_name => "Localytics",          :dependency => "Localytics",            :ios_deployment_target => "8.0" }
-  flurry           = { :spec_name => "Flurry",              :dependency => "Flurry-iOS-SDK" }
-  google           = { :spec_name => "GoogleAnalytics",     :dependency => "GoogleAnalytics",       :has_extension => true }
+  flurry           = { :spec_name => "Flurry" }
+  google           = { :spec_name => "GoogleAnalytics",     :has_extension => true }
   kissmetrics      = { :spec_name => "KISSmetrics",         :dependency => "KISSmetrics" }
   crittercism      = { :spec_name => "Crittercism",         :dependency => "CrittercismSDK" }
   countly          = { :spec_name => "Countly",             :dependency => "Countly" }
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   umeng            = { :spec_name => "UMengAnalytics",      :dependency => "UMengAnalytics" }
   segmentio        = { :spec_name => "Segmentio",           :dependency => [["Analytics", ">= 3"]], :tvos => true}
   swrve            = { :spec_name => "Swrve",               :dependency => "SwrveSDK" }
-  yandex           = { :spec_name => "YandexMobileMetrica", :dependency => "YandexMobileMetrica" }
+  yandex           = { :spec_name => "YandexMobileMetrica" }
   adjust           = { :spec_name => "Adjust",              :dependency => "Adjust" }
   intercom         = { :spec_name => "Intercom",            :dependency => "Intercom",              :ios_deployment_target => "8.0" }
   librato          = { :spec_name => "Librato" }
