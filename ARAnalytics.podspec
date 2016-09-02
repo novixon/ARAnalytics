@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         =  'ARAnalytics'
-  s.version      =  '3.10.3'
+  s.version      =  '3.10.4'
   s.license      =  {:type => 'MIT', :file => 'LICENSE' }
   s.homepage     =  'https://github.com/orta/ARAnalytics'
   s.authors      =  { 'orta' => 'orta.therox@gmail.com', 'Daniel Haight' => "confidence.designed@gmail.com" }
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
 
   mixpanel         = { :spec_name => "Mixpanel",            :dependency => "Mixpanel" }
   localytics       = { :spec_name => "Localytics",          :dependency => "Localytics",            :ios_deployment_target => "8.0" }
-  flurry           = { :spec_name => "Flurry" }
-  google           = { :spec_name => "GoogleAnalytics",     :has_extension => true }
+  flurry           = { :spec_name => "Flurry", 		    :dependency => "Flurry-iOS-SDK/FlurrySDK" }
+  google           = { :spec_name => "GoogleAnalytics",     :dependency => "Google/Analytics", :has_extension => true }
   kissmetrics      = { :spec_name => "KISSmetrics",         :dependency => "KISSmetrics" }
   crittercism      = { :spec_name => "Crittercism",         :dependency => "CrittercismSDK" }
   countly          = { :spec_name => "Countly",             :dependency => "Countly" }
